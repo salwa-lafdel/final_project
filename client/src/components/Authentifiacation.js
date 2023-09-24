@@ -21,7 +21,7 @@ const Authentification = () => {
       return
     }
     
-    const response = await fetch(`http://localhost:8000/${endpoint}`, {
+    const response = await fetch(`https://restaurant-app-n2zn.onrender.com/${endpoint}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({email, password})
