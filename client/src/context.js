@@ -90,7 +90,7 @@ const AppProvider = ({ children }) => {
         }
         
     }
-
+    //if meal existe deja ,remove it
     const removeFromFavorites = (idMeal) => {
         const updatedFavorites = favorites.filter(meal => meal.idMeal !== idMeal);
         setFavorites(updatedFavorites);
